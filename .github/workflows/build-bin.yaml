@@ -50,6 +50,8 @@ jobs:
           deno-version: v1.42
       - name: deno build-win
         run: deno task build-win
+      - name: win demo hello
+        run: ./dist/win/in/demo.exe hello
       - name: win demo upgrade
         run: ./dist/win/in/demo.exe upgrade --force
         timeout-minutes: 1
