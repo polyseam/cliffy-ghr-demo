@@ -8,7 +8,7 @@
       "jsr:@cliffy/command@^1.0.0-rc.4": "jsr:@cliffy/command@1.0.0-rc.4",
       "jsr:@cliffy/flags@1.0.0-rc.4": "jsr:@cliffy/flags@1.0.0-rc.4",
       "jsr:@cliffy/table@1.0.0-rc.4": "jsr:@cliffy/table@1.0.0-rc.4",
-      "jsr:@polyseam/cliffy-provider-gh-releases@^0.2.1": "jsr:@polyseam/cliffy-provider-gh-releases@0.2.1",
+      "jsr:@polyseam/cliffy-provider-gh-releases@^0.3.0": "jsr:@polyseam/cliffy-provider-gh-releases@0.3.0",
       "jsr:@polyseam/inflate-response@^1.1.2": "jsr:@polyseam/inflate-response@1.1.2",
       "jsr:@std/archive@0.214.0": "jsr:@std/archive@0.214.0",
       "jsr:@std/assert@^0.214.0": "jsr:@std/assert@0.214.0",
@@ -30,8 +30,6 @@
       "jsr:@std/path@^0.221.0": "jsr:@std/path@0.221.0",
       "jsr:@std/semver@^0.221.0": "jsr:@std/semver@0.221.0",
       "jsr:@std/text@0.221": "jsr:@std/text@0.221.0",
-      "npm:@octokit/types@^13.4.1": "npm:@octokit/types@13.4.1",
-      "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:octokit@^3.1.2": "npm:octokit@3.2.0_@octokit+core@5.2.0"
     },
     "jsr": {
@@ -61,8 +59,8 @@
           "jsr:@std/console@0.221"
         ]
       },
-      "@polyseam/cliffy-provider-gh-releases@0.2.1": {
-        "integrity": "8f6e38afd8451798f1cee3444bc1e1d849dbf6b2f29caa59d103587aaaf21fb1",
+      "@polyseam/cliffy-provider-gh-releases@0.3.0": {
+        "integrity": "52254879592ae6b293c1387252fecafe06afbfad803239e60a54897e16585907",
         "dependencies": [
           "jsr:@cliffy/ansi@^1.0.0-rc.4",
           "jsr:@cliffy/command@^1.0.0-rc.4",
@@ -70,7 +68,6 @@
           "jsr:@std/cli@^0.221.0",
           "jsr:@std/fs@^0.221.0",
           "jsr:@std/semver@^0.221.0",
-          "npm:@octokit/types@^13.4.1",
           "npm:octokit@^3.1.2"
         ]
       },
@@ -561,7 +558,7 @@
   "remote": {},
   "workspace": {
     "dependencies": [
-      "jsr:@polyseam/cliffy-provider-gh-releases@^0.2.1"
+      "jsr:@polyseam/cliffy-provider-gh-releases@^0.3.0"
     ]
   }
 }
