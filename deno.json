@@ -20,6 +20,9 @@
     "build-win": "deno lint && deno fmt && deno task clean-dist && deno task compile-win"
   },
   "imports": {
-    "@polyseam/cliffy-provider-gh-releases": "jsr:@polyseam/cliffy-provider-gh-releases@^0.3.0"
+    "@cliffy/ansi": "jsr:@cliffy/ansi@^1.0.0-rc.4",
+    "@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.4",
+    "@polyseam/cliffy-provider-gh-releases": "jsr:@polyseam/cliffy-provider-gh-releases@^0.3.0",
+    "@std/path": "jsr:@std/path@^0.222.1"
   }
 }

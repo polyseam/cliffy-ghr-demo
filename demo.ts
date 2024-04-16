@@ -1,6 +1,6 @@
-import { join } from "jsr:@std/path@0.222.1";
-import { colors } from "jsr:@cliffy/ansi@1.0.0-rc.4";
-import { Command } from "jsr:@cliffy/command@1.0.0-rc.4";
+import { join } from "@std/path";
+import { colors } from "@cliffy/ansi";
+import { Command } from "@cliffy/command";
 import {
   type GHRError,
   GithubReleasesProvider,
