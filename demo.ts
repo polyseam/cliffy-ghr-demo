@@ -50,6 +50,7 @@ const cli = new Command()
     "hello",
     new Command().action(() => console.log("Hello World!")),
   )
+  .command('cowsay', new Command().action(() => console.log("Moo!")))
   .command("upgrade", upgradeCommand);
 
 if (import.meta.main) {
