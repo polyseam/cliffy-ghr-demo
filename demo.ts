@@ -7,7 +7,7 @@ import {
   GithubReleasesUpgradeCommand,
 } from "@polyseam/cliffy-provider-gh-releases";
 
-import { version } from "./deno.json" with { type: "json" };
+import deno_json from "./deno.json" with { type: "json" };
 
 const destinationDir = join(Deno.cwd(), "dist");
 
@@ -23,6 +23,8 @@ function printError(error: GHRError) {
   }
   console.log("\n");
 }
+
+const version = deno_json.version;
 
 const upgradeCommand = new GithubReleasesUpgradeCommand({
   provider: new GithubReleasesProvider({
