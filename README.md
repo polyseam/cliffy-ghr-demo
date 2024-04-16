@@ -1,7 +1,7 @@
 # @cliffy-provider-gh-releases/demo
 
 A small sandbox to demonstrate the usage of the
-[cliffy-provider-gh-releases](../) module.
+[polyseam/cliffy-provider-gh-releases](https://github.com/polyseam/cliffy-provider-gh-releases) module.
 
 ## usage
 
