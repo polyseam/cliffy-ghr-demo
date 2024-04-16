@@ -7,6 +7,8 @@ import {
   GithubReleasesUpgradeCommand,
 } from "@polyseam/cliffy-provider-gh-releases";
 
+import { version } from "./deno.json" with { type: "json" };
+
 const destinationDir = join(Deno.cwd(), "dist");
 
 function printError(error: GHRError) {
@@ -36,8 +38,12 @@ const upgradeCommand = new GithubReleasesUpgradeCommand({
       const exit_code = parseInt(`8${error.code}`);
       Deno.exit(exit_code);
     },
-    onComplete: () => {
-      console.log("\ninstalled!");
+    onComplete: (meta) => {
+      console.log(
+        colors.green(
+          `Successfully upgraded to version '${meta.to}'!`,
+        ),
+      );
       Deno.exit(0);
     },
   }),
@@ -45,7 +51,7 @@ const upgradeCommand = new GithubReleasesUpgradeCommand({
 
 const cli = new Command()
   .name("demo")
-  .version("0.1.0")
+  .version(version)
   .command(
     "hello",
     new Command().action(() => console.log("Hello World!")),

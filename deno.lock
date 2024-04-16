@@ -2,7 +2,9 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "jsr:@cliffy/ansi@1.0.0-rc.4": "jsr:@cliffy/ansi@1.0.0-rc.4",
       "jsr:@cliffy/ansi@^1.0.0-rc.4": "jsr:@cliffy/ansi@1.0.0-rc.4",
+      "jsr:@cliffy/command@1.0.0-rc.4": "jsr:@cliffy/command@1.0.0-rc.4",
       "jsr:@cliffy/command@^1.0.0-rc.4": "jsr:@cliffy/command@1.0.0-rc.4",
       "jsr:@cliffy/flags@1.0.0-rc.4": "jsr:@cliffy/flags@1.0.0-rc.4",
       "jsr:@cliffy/table@1.0.0-rc.4": "jsr:@cliffy/table@1.0.0-rc.4",
@@ -152,7 +154,10 @@
         "integrity": "836a446cd1d054d08c7498c243199ddf0b604740d72dec56df96e2833413f039"
       },
       "@std/text@0.221.0": {
-        "integrity": "a2f89ceb0d8851cd33e6774064621a1da9fbc36578cf4f02c5b5bcd7e8c84b67"
+        "integrity": "a2f89ceb0d8851cd33e6774064621a1da9fbc36578cf4f02c5b5bcd7e8c84b67",
+        "dependencies": [
+          "jsr:@std/assert@^0.221.0"
+        ]
       }
     },
     "npm": {
