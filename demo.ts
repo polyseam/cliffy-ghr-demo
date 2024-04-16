@@ -24,7 +24,7 @@ function printError(error: GHRError) {
   console.log("\n");
 }
 
-const version = deno_json.version;
+const DEMO_VERSION = deno_json.version;
 
 const upgradeCommand = new GithubReleasesUpgradeCommand({
   provider: new GithubReleasesProvider({
@@ -40,12 +40,8 @@ const upgradeCommand = new GithubReleasesUpgradeCommand({
       const exit_code = parseInt(`8${error.code}`);
       Deno.exit(exit_code);
     },
-    onComplete: (meta) => {
-      console.log(
-        colors.green(
-          `Successfully upgraded to version '${meta.to}'!`,
-        ),
-      );
+    onComplete: (_meta, printSuccessMessage) => {
+      printSuccessMessage();
       Deno.exit(0);
     },
   }),
@@ -53,7 +49,7 @@ const upgradeCommand = new GithubReleasesUpgradeCommand({
 
 const cli = new Command()
   .name("demo")
-  .version(version)
+  .version(`v${DEMO_VERSION}`)
   .command(
     "hello",
     new Command().action(() => console.log("Hello World!")),
