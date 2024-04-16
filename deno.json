@@ -19,8 +19,7 @@
     "build-linux": "deno lint && deno fmt && deno task clean-dist && deno task compile-linux",
     "build-win": "deno lint && deno fmt && deno task clean-dist && deno task compile-win"
   },
-  "exports": "./demo.ts",
   "imports": {
-    "@polyseam/cliffy-provider-gh-releases": "jsr:@polyseam/cliffy-provider-gh-releases@^0.2.0"
+    "@polyseam/cliffy-provider-gh-releases": "jsr:@polyseam/cliffy-provider-gh-releases@^0.2.1"
   }
 }
